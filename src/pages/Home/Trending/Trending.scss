@@ -1,0 +1,57 @@
+
+.trending-component{
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    .switchingTabs{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .card-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .trending_img{
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1.5;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 10px;
+
+        .lazy-load-image-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .genres{
+        display: flex;
+        gap: 5px;
+        .genre{
+            background-color: var(--pink);
+            padding: 3px 5px;
+            font-size: 12px;
+            border-radius: 4px;
+            color: #fff;
+            white-space: nowrap;
+        }
+    }
+}
